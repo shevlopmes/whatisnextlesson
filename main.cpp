@@ -69,8 +69,9 @@ void next_lesson (int time){
 signed main()
 {
     setlocale(LC_ALL,"Russian");
-    cout << "Сейчас "; out_time(time(0)+3*3600);
+    int c = 3*3600;
+    cout << "Сейчас "; out_time(time(0)+c);
     cout << '\n';
 
-    next_lesson(time(0)+3*3600);
+    next_lesson(time(0)+c);
 }
